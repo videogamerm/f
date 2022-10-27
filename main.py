@@ -2,7 +2,7 @@
 
 import PySimpleGUI as sg
 from playsound import playsound
-layout = [[sg.Text("Hello from PySimpleGUI")], [sg.Button("OK")]]
+layout = [[sg.Text("Spooooookeeeee")], [sg.Button("Spookeeeeee")]]
 
 # Create the window
 window = sg.Window("Demo", layout)
@@ -12,9 +12,9 @@ while True:
     event, values = window.read()
     # End program if user closes window or
     # presses the OK button
-    if event == "OK":
-        playsound('spanish.mp3')
-
+    if event == "Spookeeeeee":
+        playsound("/home/mason/Music/secretLoop02.mp3")
+        break
     elif event == sg.WIN_CLOSED:
         break
 
